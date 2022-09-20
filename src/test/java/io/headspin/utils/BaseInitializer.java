@@ -32,7 +32,7 @@ public class BaseInitializer {
         /*cap.setCapability(MobileCapabilityType.UDID, "RZ8NA0Z723M");
         cap.setCapability("appPackage", "org.zwanoo.android.speedtest");
         cap.setCapability("appActivity", "com.ookla.mobile4.screens.main.MainActivity");*/
-        cap.setCapability("headspin:controlLock", true);
+        cap.setCapability("headspin:controlLock", false);
         cap.setCapability("headspin:capture.video", true);
         cap.setCapability("autoLaunch", "true");
         cap.setCapability(MobileCapabilityType.NO_RESET, "true");
