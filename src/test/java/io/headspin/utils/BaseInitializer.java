@@ -19,6 +19,7 @@ public class BaseInitializer {
         String UDID = getConfigProperty("Udid");
         String AppPackage = getConfigProperty("Package");
         String AppActivity = getConfigProperty("Activity");
+        test_name = getConfigProperty("Test_name");
 
         DesiredCapabilities cap = new DesiredCapabilities();
 

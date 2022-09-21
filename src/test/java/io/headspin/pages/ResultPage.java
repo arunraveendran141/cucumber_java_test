@@ -15,10 +15,10 @@ public class ResultPage extends BasePage {
 
         List<WebElement> list_of_elements = waitForElementsPresent(txt_result);
         System.out.println("Download Speed:" + list_of_elements.get(0).getText());
-        System.out.println("Upload Speed:" + list_of_elements.get(1).getText());
+        /*System.out.println("Upload Speed:" + list_of_elements.get(1).getText());
         System.out.println("Ping:" + list_of_elements.get(2).getText());
         System.out.println("Jitter:" + list_of_elements.get(3).getText());
-        System.out.println("Loss:" + list_of_elements.get(4).getText());
+        System.out.println("Loss:" + list_of_elements.get(4).getText());*/
 
       /*int num = list_of_elements.size();
         for(int i=0; i<num; i++){
