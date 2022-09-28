@@ -1,0 +1,12 @@
+io/headspin/basic_functionalities/PropertyFileReader.class
+io/headspin/steps/SpeedTest.class
+io/headspin/pages/LaunchPage.class
+io/headspin/utils/MavenParameters.class
+io/headspin/steps/StepInitializer.class
+io/headspin/pages/BasePage.class
+io/headspin/global_variables/GlobalVariable.class
+io/headspin/utils/HsApi.class
+io/headspin/runner/Runner.class
+io/headspin/utils/BaseInitializer.class
+io/headspin/pages/ResultPage.class
+io/headspin/utils/SessionVisualLib.class

@@ -12,6 +12,7 @@ import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse;
 
 import static io.headspin.global_variables.GlobalVariable.*;
+import io.headspin.utils.HsApi.*;
 
 public class SessionVisualLib {
         static String url_root = "https://api-dev.headspin.io/v0/";
@@ -48,7 +49,7 @@ public class SessionVisualLib {
             session_data.put("data",ja);
             String temp = session_data.toString();
             System.out.println("t:" + temp);
-            System.out.println("{\"data\":[{\"value\":\"test\",\"key\":\"bundle_id\"}],\"session_id\":1aa13022-2d44-11ed-be31-00e04c693a0e,\"test_name\":\"testname\",\"status\":\"Passed\"}");
+//            System.out.println("{\"data\":[{\"value\":\"test\",\"key\":\"bundle_id\"}],\"session_id\":1aa13022-2d44-11ed-be31-00e04c693a0e,\"test_name\":\"testname\",\"status\":\"Passed\"}");
             HttpRequest postRequest = HttpRequest.newBuilder()
                     .uri(new URI(url_root + "perftests/upload"))
                     .header("Authorization", "Bearer "+access_token)
@@ -68,6 +69,7 @@ public class SessionVisualLib {
             run_add_session_data();
 
         }
+
 //    This is Working >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //    public static void run_record_session_info() throws IOException {
 //        System.out.println("In visual lib");
@@ -90,4 +92,6 @@ public class SessionVisualLib {
 //        String response2 = s1.hasNext() ? s1.next() : "";
 //        System.out.println("last"+response2);
 //    }
+
+
 }

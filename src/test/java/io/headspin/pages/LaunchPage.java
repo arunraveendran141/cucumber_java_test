@@ -1,5 +1,6 @@
 package io.headspin.pages;
 import org.openqa.selenium.By;
+import static io.headspin.global_variables.GlobalVariable.*;
 
 public class LaunchPage extends BasePage {
 
@@ -10,6 +11,7 @@ public class LaunchPage extends BasePage {
 //        wait.until(ExpectedConditions.presenceOfElementLocated(btn_go));
         waitForElementPresent(btn_go);
         System.out.println("Launch Page Verified");
+//        System.out.println(session_specific_data);
     }
 
     public void click_btn_go() {

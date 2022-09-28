@@ -33,5 +33,18 @@ public class HsApi {
     /*r = requests.get(request_url, headers=self.headers)
     data = r.json()
     print(data)
-        return data*/
+        return data
+
+
+    def run_adb_command(self,  commmand_to_run):
+    api_endpoint = "https://api-dev.headspin.io/v0/adb/{}/shell".format(
+            self.UDID)
+    r = requests.post(url=api_endpoint, data=commmand_to_run,
+    headers=self.headers, timeout=LONG_TIMOUT)
+    result = r.json()
+    stdout = result['stdout'].encode('utf-8').strip()
+        return stdout
+
+
+     */
 }
